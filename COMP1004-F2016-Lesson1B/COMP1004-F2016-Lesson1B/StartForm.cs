@@ -21,5 +21,26 @@ namespace COMP1004_F2016_Lesson1B
         {
 
         }
+
+        private void ClickMeButton_Click(object sender, EventArgs e)
+        {
+            MessageLabel.Text = "You clicked the button!";
+        }
+
+        private void ClickMeButton_MouseEnter(object sender, EventArgs e)
+        {
+            MessageLabel.Text = "Hey!";
+        }
+
+        private void ClickMeButton_MouseLeave(object sender, EventArgs e)
+        {
+            MessageLabel.Text = "Cya!";
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
+    
 }
